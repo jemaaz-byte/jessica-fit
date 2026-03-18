@@ -25,110 +25,114 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
 /* HEADER */
 .hdr{flex-shrink:0;background:var(--bg);padding:12px 18px 0;border-bottom:1px solid var(--ln);}
 .hdr-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
-.gname{font-family:'Bebas Neue',sans-serif;font-size:28px;color:#fff;letter-spacing:1px;line-height:1;}
+.gname{font-family:'Bebas Neue',sans-serif;font-size:34px;color:#fff;letter-spacing:1px;line-height:1;}
 .gname span{color:var(--pk);}
-.gsub{font-size:9px;color:var(--mu);letter-spacing:1.5px;text-transform:uppercase;}
-.av{width:38px;height:38px;border-radius:50%;background:var(--pk);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:15px;color:#fff;flex-shrink:0;}
-.dstrip{display:flex;gap:5px;padding-bottom:11px;overflow-x:auto;scrollbar-width:none;}
+.gsub{font-size:11px;color:var(--mu);letter-spacing:1.5px;text-transform:uppercase;}
+.av{width:44px;height:44px;border-radius:50%;background:var(--pk);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:18px;color:#fff;flex-shrink:0;}
+.dstrip{display:flex;gap:6px;padding-bottom:12px;overflow-x:auto;scrollbar-width:none;}
 .dstrip::-webkit-scrollbar{display:none;}
-.dbtn{flex-shrink:0;display:flex;flex-direction:column;align-items:center;padding:6px 8px;border-radius:10px;border:1.5px solid transparent;background:var(--bg3);cursor:pointer;gap:2px;position:relative;}
+.dbtn{flex-shrink:0;display:flex;flex-direction:column;align-items:center;padding:8px 11px;border-radius:10px;border:1.5px solid transparent;background:var(--bg3);cursor:pointer;gap:3px;position:relative;}
 .dbtn.active{background:var(--pkd);border-color:var(--pk);}
-.dabbr{font-size:8px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--mu);}
+.dabbr{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--mu);}
 .dbtn.active .dabbr{color:var(--pk2);}
-.dico{font-size:12px;line-height:1;}
-.ddot{width:4px;height:4px;border-radius:50%;background:transparent;}
+.dico{font-size:15px;line-height:1;}
+.ddot{width:5px;height:5px;border-radius:50%;background:transparent;}
 .dbtn.active .ddot{background:var(--pk);}
-.dbtn .dbadge{position:absolute;top:-4px;right:-4px;width:12px;height:12px;background:var(--gr);border-radius:50%;border:1.5px solid var(--bg);display:none;align-items:center;justify-content:center;font-size:7px;color:#fff;}
+.dbtn .dbadge{position:absolute;top:-4px;right:-4px;width:14px;height:14px;background:var(--gr);border-radius:50%;border:1.5px solid var(--bg);display:none;align-items:center;justify-content:center;font-size:8px;color:#fff;}
 .dbtn.has-done .dbadge{display:flex;}
 
 /* TABS */
 .tabs{flex-shrink:0;display:flex;background:var(--bg2);border-bottom:1px solid var(--ln);}
-.tab{flex:1;padding:10px 0;text-align:center;font-size:11px;font-weight:600;letter-spacing:.3px;color:var(--mu);cursor:pointer;border-bottom:2px solid transparent;}
+.tab{flex:1;padding:12px 0;text-align:center;font-size:13px;font-weight:600;letter-spacing:.3px;color:var(--mu);cursor:pointer;border-bottom:2px solid transparent;}
 .tab.active{color:var(--pk);border-bottom-color:var(--pk);}
 
 /* SCROLL */
 .scroll{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;}
 .scroll::-webkit-scrollbar{display:none;}
-.panel{display:none;padding:13px 13px 24px;}
+.panel{display:none;padding:14px 14px 28px;}
 .panel.active{display:block;}
 
 /* SECTION TITLE */
-.sec{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mu);margin-bottom:8px;display:flex;align-items:center;gap:7px;}
+.sec{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mu);margin-bottom:9px;display:flex;align-items:center;gap:7px;}
 .sec::after{content:'';flex:1;height:1px;background:var(--ln);}
 
 /* WORKOUT HERO */
-.who{background:var(--bg2);border:1px solid var(--ln);border-radius:14px;padding:14px;margin-bottom:10px;position:relative;overflow:hidden;}
+.who{background:var(--bg2);border:1px solid var(--ln);border-radius:14px;padding:16px;margin-bottom:11px;position:relative;overflow:hidden;}
 .who::before{content:'';position:absolute;top:-20px;right:-20px;width:110px;height:110px;background:radial-gradient(circle,rgba(232,0,125,0.09) 0%,transparent 70%);pointer-events:none;}
-.wtype{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:100px;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:7px;}
+.wtype{display:inline-flex;align-items:center;gap:4px;padding:4px 11px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
 .wrun{background:rgba(59,130,246,.12);color:#60a5fa;border:1px solid rgba(59,130,246,.25);}
 .wmus{background:rgba(232,0,125,.12);color:var(--pk2);border:1px solid rgba(232,0,125,.25);}
 .whit{background:rgba(245,158,11,.12);color:#fbbf24;border:1px solid rgba(245,158,11,.25);}
 .wres{background:rgba(34,197,94,.12);color:#4ade80;border:1px solid rgba(34,197,94,.25);}
-.wnam{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:1px;color:#fff;line-height:1;margin-bottom:3px;}
-.wsub{font-size:11px;color:var(--mu);}
-.wmeta{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap;}
-.wchip{background:rgba(255,255,255,.05);border-radius:7px;padding:4px 8px;font-size:10px;color:var(--tx);font-weight:500;}
+.wnam{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:1px;color:#fff;line-height:1;margin-bottom:4px;}
+.wsub{font-size:13px;color:var(--mu);}
+.wmeta{display:flex;gap:8px;margin-top:11px;flex-wrap:wrap;}
+.wchip{background:rgba(255,255,255,.05);border-radius:7px;padding:5px 10px;font-size:12px;color:var(--tx);font-weight:500;}
 
 /* EXERCISE ROW */
-.exl{display:flex;flex-direction:column;gap:5px;margin-bottom:12px;}
-.exr{display:flex;align-items:center;gap:10px;background:var(--bg2);border:1px solid var(--ln);border-radius:11px;padding:10px 12px;cursor:pointer;}
+.exl{display:flex;flex-direction:column;gap:6px;margin-bottom:13px;}
+.exr{display:flex;align-items:center;gap:11px;background:var(--bg2);border:1px solid var(--ln);border-radius:12px;padding:12px 14px;cursor:pointer;}
 .exr.done{background:rgba(34,197,94,.06);border-color:rgba(34,197,94,.25);}
-.chk{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--mu);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.chk{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--mu);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .exr.done .chk{background:var(--gr);border-color:var(--gr);}
 .chk svg{opacity:0;}
 .exr.done .chk svg{opacity:1;}
-.exn{font-family:'Bebas Neue',sans-serif;font-size:17px;color:var(--pk);min-width:20px;line-height:1;}
+.exn{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--pk);min-width:24px;line-height:1;}
 .exr.done .exn{color:var(--gr);}
 .exi{flex:1;}
-.exname{font-size:12px;font-weight:600;color:#fff;}
+.exname{font-size:14px;font-weight:600;color:#fff;}
 .exr.done .exname{color:rgba(255,255,255,.4);text-decoration:line-through;}
-.exdet{font-size:10px;color:var(--mu);margin-top:1px;}
-.exsets{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#fff;white-space:nowrap;}
+.exdet{font-size:12px;color:var(--mu);margin-top:2px;}
+.exsets{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;white-space:nowrap;}
 .exr.done .exsets{color:rgba(255,255,255,.3);}
+.exright{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.vbtn{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:rgba(255,0,0,0.15);border:1px solid rgba(255,60,60,0.35);flex-shrink:0;text-decoration:none;transition:background .15s;}
+.vbtn:active{background:rgba(255,0,0,0.3);}
+.vbtn svg{width:13px;height:13px;fill:#ff4444;}
 
 /* CARDIO BLOCK */
-.cblock{background:var(--bg2);border:1px solid var(--ln);border-radius:14px;padding:15px;margin-bottom:10px;}
-.ctit{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff;margin-bottom:5px;}
-.cdesc{font-size:11px;color:var(--mu);line-height:1.6;margin-bottom:12px;}
-.ivals{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:14px;}
-.ip{padding:8px 11px;border-radius:9px;text-align:center;}
+.cblock{background:var(--bg2);border:1px solid var(--ln);border-radius:14px;padding:16px;margin-bottom:11px;}
+.ctit{font-family:'Bebas Neue',sans-serif;font-size:24px;color:#fff;margin-bottom:6px;}
+.cdesc{font-size:13px;color:var(--mu);line-height:1.6;margin-bottom:13px;}
+.ivals{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px;}
+.ip{padding:10px 13px;border-radius:9px;text-align:center;}
 .ifa{background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.25);}
 .isl{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.25);}
-.iv{font-family:'Bebas Neue',sans-serif;font-size:19px;line-height:1;}
+.iv{font-family:'Bebas Neue',sans-serif;font-size:22px;line-height:1;}
 .ifa .iv{color:#fbbf24;}
 .isl .iv{color:#60a5fa;}
-.il{font-size:8px;color:var(--mu);letter-spacing:.5px;text-transform:uppercase;margin-top:2px;}
-.iop{font-family:'Bebas Neue',sans-serif;font-size:19px;color:rgba(255,255,255,.2);}
-.creg{background:var(--bg3);border-radius:11px;padding:12px;}
-.creg label{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--mu);margin-bottom:6px;display:block;}
-.rrow{display:flex;gap:8px;margin-bottom:8px;}
+.il{font-size:10px;color:var(--mu);letter-spacing:.5px;text-transform:uppercase;margin-top:3px;}
+.iop{font-family:'Bebas Neue',sans-serif;font-size:22px;color:rgba(255,255,255,.2);}
+.creg{background:var(--bg3);border-radius:11px;padding:13px;}
+.creg label{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--mu);margin-bottom:7px;display:block;}
+.rrow{display:flex;gap:9px;margin-bottom:9px;}
 .rfield{flex:1;display:flex;flex-direction:column;}
-.rfield input{background:var(--bg2);border:1px solid var(--ln);border-radius:8px;padding:8px 10px;font-size:14px;font-family:'Syne',sans-serif;color:#fff;outline:none;width:100%;}
+.rfield input{background:var(--bg2);border:1px solid var(--ln);border-radius:8px;padding:10px 12px;font-size:16px;font-family:'Syne',sans-serif;color:#fff;outline:none;width:100%;}
 .rfield input:focus{border-color:var(--pk);}
 .rfield input::placeholder{color:var(--mu);}
-.rfield span{font-size:9px;color:var(--mu);margin-top:3px;letter-spacing:.5px;}
-.cbtn{width:100%;padding:10px;background:var(--pkd);border:1.5px solid var(--pk);border-radius:9px;color:var(--pk2);font-family:'Syne',sans-serif;font-size:12px;font-weight:700;cursor:pointer;margin-top:2px;}
+.rfield span{font-size:11px;color:var(--mu);margin-top:3px;letter-spacing:.5px;}
+.cbtn{width:100%;padding:12px;background:var(--pkd);border:1.5px solid var(--pk);border-radius:9px;color:var(--pk2);font-family:'Syne',sans-serif;font-size:14px;font-weight:700;cursor:pointer;margin-top:2px;}
 .cbtn.done{background:rgba(34,197,94,.1);border-color:var(--gr);color:#4ade80;}
-.csum{display:none;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:9px;padding:8px 12px;margin-top:7px;font-size:12px;color:#4ade80;font-weight:600;}
+.csum{display:none;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:9px;padding:9px 13px;margin-top:8px;font-size:13px;color:#4ade80;font-weight:600;}
 .csum.show{display:block;}
 
 /* MEAL CARD + FOOD ITEMS */
-.mcard{background:var(--bg2);border:1px solid var(--ln);border-radius:12px;margin-bottom:8px;overflow:visible;}
-.mhdr{display:flex;align-items:center;justify-content:space-between;padding:9px 12px 7px;border-bottom:1px solid var(--ln);}
-.mlbl{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--tx);}
-.mprot{font-size:10px;font-weight:700;color:var(--pk2);}
-.mitems{padding:5px 10px 8px;display:flex;flex-direction:column;gap:3px;}
+.mcard{background:var(--bg2);border:1px solid var(--ln);border-radius:13px;margin-bottom:9px;overflow:visible;}
+.mhdr{display:flex;align-items:center;justify-content:space-between;padding:11px 14px 9px;border-bottom:1px solid var(--ln);}
+.mlbl{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--tx);}
+.mprot{font-size:12px;font-weight:700;color:var(--pk2);}
+.mitems{padding:6px 12px 10px;display:flex;flex-direction:column;gap:3px;}
 
 .fitem{display:flex;align-items:center;gap:8px;padding:6px 4px;border-radius:8px;cursor:pointer;}
 .fitem:active{opacity:.7;}
-.fchk{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--mu);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.fchk{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--mu);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .fitem.done .fchk{background:var(--gr);border-color:var(--gr);}
 .fchk svg{opacity:0;}
 .fitem.done .fchk svg{opacity:1;}
-.fname{flex:1;font-size:12px;color:var(--tx);}
+.fname{flex:1;font-size:14px;color:var(--tx);}
 .fitem.done .fname{color:rgba(255,255,255,.35);text-decoration:line-through;}
-.fmeta{font-size:10px;color:var(--mu);white-space:nowrap;}
-.fprot{font-size:10px;font-weight:600;color:var(--pk2);white-space:nowrap;}
+.fmeta{font-size:12px;color:var(--mu);white-space:nowrap;}
+.fprot{font-size:12px;font-weight:600;color:var(--pk2);white-space:nowrap;}
 .fedit{font-size:14px;color:var(--mu);padding:2px 4px;flex-shrink:0;}
 
 /* ADD FOOD BUTTON */
@@ -137,47 +141,47 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
 /* PROTEIN BAR */
 .psumm{background:var(--bg2);border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-bottom:10px;}
 .psrow{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
-.pslbl{font-size:9px;color:var(--mu);text-transform:uppercase;letter-spacing:1px;}
-.psval{font-family:'Bebas Neue',sans-serif;font-size:22px;color:#fff;}
+.pslbl{font-size:11px;color:var(--mu);text-transform:uppercase;letter-spacing:1px;}
+.psval{font-family:'Bebas Neue',sans-serif;font-size:26px;color:#fff;}
 .psval span{font-size:11px;font-weight:400;color:var(--mu);font-family:'Syne',sans-serif;}
 .pbar{height:4px;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden;}
 .pbf{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--pk),var(--pk2));transition:width .4s;}
-.psnote{font-size:10px;color:var(--gr);margin-top:5px;font-weight:500;}
+.psnote{font-size:12px;color:var(--gr);margin-top:5px;font-weight:500;}
 
 /* REST */
 .rblock{text-align:center;padding:32px 20px;}
 .rico{font-size:40px;margin-bottom:12px;}
 .rtit{font-family:'Bebas Neue',sans-serif;font-size:30px;color:#fff;margin-bottom:6px;}
-.rsub{font-size:11px;color:var(--mu);line-height:1.6;max-width:220px;margin:0 auto 16px;}
-.rnote{display:inline-block;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);color:#4ade80;border-radius:9px;padding:8px 14px;font-size:11px;font-weight:600;}
+.rsub{font-size:14px;color:var(--mu);line-height:1.6;max-width:220px;margin:0 auto 16px;}
+.rnote{display:inline-block;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);color:#4ade80;border-radius:9px;padding:10px 18px;font-size:13px;font-weight:600;}
 
 /* TIP */
 .tipb{background:rgba(232,0,125,.06);border:1px solid rgba(232,0,125,.15);border-radius:10px;padding:11px 13px;margin-bottom:10px;}
-.tipt{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--pk2);margin-bottom:6px;}
+.tipt{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--pk2);margin-bottom:6px;}
 .tipi{display:flex;gap:7px;align-items:flex-start;margin-bottom:4px;}
 .tipi:last-child{margin-bottom:0;}
-.tipa{color:var(--pk);font-size:10px;margin-top:1px;flex-shrink:0;}
-.tipt2{font-size:11px;color:var(--mu);line-height:1.5;}
+.tipa{color:var(--pk);font-size:12px;margin-top:1px;flex-shrink:0;}
+.tipt2{font-size:13px;color:var(--mu);line-height:1.5;}
 
 /* ============ HOME PROGRESSO ============ */
 .home-panel{padding:0;}
 
 /* HERO MOTIVACIONAL */
 .prog-hero{background:var(--bg2);padding:20px 18px 18px;border-bottom:1px solid var(--ln);}
-.ph-month{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mu);margin-bottom:4px;}
+.ph-month{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mu);margin-bottom:4px;}
 .ph-title{font-family:'Bebas Neue',sans-serif;font-size:32px;color:#fff;line-height:1;margin-bottom:14px;}
 .ph-title span{color:var(--pk);}
 .ph-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
 .phstat{background:var(--bg3);border-radius:11px;padding:12px 14px;}
 .phstat-num{font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--pk);line-height:1;}
-.phstat-lbl{font-size:9px;color:var(--mu);margin-top:2px;text-transform:uppercase;letter-spacing:.5px;}
+.phstat-lbl{font-size:11px;color:var(--mu);margin-top:2px;text-transform:uppercase;letter-spacing:.5px;}
 .phstat.green .phstat-num{color:var(--gr);}
 .phstat.blue .phstat-num{color:#60a5fa;}
 .phstat.amber .phstat-num{color:#fbbf24;}
 
 /* STREAK */
 .streak-bar{padding:14px 18px;border-bottom:1px solid var(--ln);}
-.streak-label{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--mu);margin-bottom:8px;}
+.streak-label{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--mu);margin-bottom:8px;}
 .streak-days{display:flex;gap:4px;}
 .sday{flex:1;height:32px;border-radius:7px;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mu);}
 .sday.done{background:var(--pkd);color:var(--pk2);border:1px solid rgba(232,0,125,.2);}
@@ -186,7 +190,7 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
 
 /* MONTH CALENDAR (km heatmap) */
 .month-section{padding:14px 18px;border-bottom:1px solid var(--ln);}
-.ms-title{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--mu);margin-bottom:10px;}
+.ms-title{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--mu);margin-bottom:10px;}
 .month-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;}
 .mcell{aspect-ratio:1;border-radius:5px;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--mu);font-weight:600;}
 .mcell.has-train{background:var(--pkd);color:var(--pk2);}
@@ -197,23 +201,23 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
 /* RUN LOG */
 .run-section{padding:14px 18px;border-bottom:1px solid var(--ln);}
 .run-entry{background:var(--bg2);border-radius:9px;padding:9px 12px;display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;}
-.re-day{font-size:10px;font-weight:600;color:var(--pk2);}
-.re-date{font-size:9px;color:var(--mu);margin-top:1px;}
-.re-stats{font-size:12px;color:var(--tx);font-weight:500;}
-.re-empty{font-size:11px;color:var(--mu);text-align:center;padding:16px 0;}
+.re-day{font-size:13px;font-weight:600;color:var(--pk2);}
+.re-date{font-size:11px;color:var(--mu);margin-top:1px;}
+.re-stats{font-size:14px;color:var(--tx);font-weight:500;}
+.re-empty{font-size:13px;color:var(--mu);text-align:center;padding:16px 0;}
 
 /* GOALS */
 .goals-section{padding:14px 18px 24px;}
 .gitem{background:var(--bg2);border:1px solid var(--ln);border-radius:10px;padding:10px 12px;display:flex;align-items:center;gap:8px;margin-bottom:5px;}
 .gdot{width:6px;height:6px;border-radius:50%;background:var(--pk);flex-shrink:0;}
-.gtxt{font-size:11px;color:var(--tx);}
+.gtxt{font-size:14px;color:var(--tx);}
 
 /* BOTTOM NAV */
 .bnav{flex-shrink:0;display:flex;background:var(--bg2);border-top:1px solid var(--ln);padding-bottom:var(--sb);}
-.nbtn{flex:1;padding:10px 0 8px;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;color:var(--mu);}
+.nbtn{flex:1;padding:12px 0 10px;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;color:var(--mu);}
 .nbtn.active{color:var(--pk);}
-.nico{font-size:14px;line-height:1;}
-.nlbl{font-size:8px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;}
+.nico{font-size:18px;line-height:1;}
+.nlbl{font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;}
 
 /* ============ FOOD PICKER MODAL ============ */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:100;display:none;align-items:flex-end;justify-content:center;}
@@ -337,12 +341,12 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
   <div class="who"><div class="wtype wmus">🍑 Glúteo + Perna</div><div class="wnam">TERÇA</div><div class="wsub">🔥 Aqui é onde seu corpo muda</div><div class="wmeta"><div class="wchip">⏱ ~50 min</div><div class="wchip">⏸ 45–60s</div></div></div>
   <div class="sec">Exercícios</div>
   <div class="exl" id="exl-1">
-    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="0"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">01</div><div class="exi"><div class="exname">Agachamento livre</div><div class="exdet">Carga moderada/alta · descida lenta</div></div><div class="exsets">4×10</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="1"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">02</div><div class="exi"><div class="exname">Hip Thrust ⭐</div><div class="exdet">Segura 2s no topo</div></div><div class="exsets">4×12</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="2"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">03</div><div class="exi"><div class="exname">Afundo</div><div class="exdet">Cada perna</div></div><div class="exsets">3×12</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="3"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">04</div><div class="exi"><div class="exname">Stiff</div><div class="exdet">Movimento controlado</div></div><div class="exsets">3×10</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="4"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">05</div><div class="exi"><div class="exname">Cadeira abdutora</div><div class="exdet">Foco no glúteo</div></div><div class="exsets">3×15</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="5"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">06</div><div class="exi"><div class="exname">Panturrilha</div><div class="exdet">Finalizando</div></div><div class="exsets">3×15</div></div>
+    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="0"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">01</div><div class="exi"><div class="exname">Agachamento livre</div><div class="exdet">Carga moderada/alta · descida lenta</div></div><div class="exright"><div class="exsets">4×10</div><a class="vbtn" href="https://www.youtube.com/shorts/3uZE_E11eg4" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="1"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">02</div><div class="exi"><div class="exname">Hip Thrust ⭐</div><div class="exdet">Segura 2s no topo</div></div><div class="exright"><div class="exsets">4×12</div><a class="vbtn" href="https://www.youtube.com/shorts/CvuVYMFd11g" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="2"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">03</div><div class="exi"><div class="exname">Afundo</div><div class="exdet">Cada perna</div></div><div class="exright"><div class="exsets">3×12</div><a class="vbtn" href="https://www.youtube.com/shorts/rltJymhFtHg" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="3"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">04</div><div class="exi"><div class="exname">Stiff</div><div class="exdet">Movimento controlado</div></div><div class="exright"><div class="exsets">3×10</div><a class="vbtn" href="https://www.youtube.com/shorts/ZoUMv0gsgI8" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="4"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">05</div><div class="exi"><div class="exname">Cadeira abdutora</div><div class="exdet">Foco no glúteo</div></div><div class="exright"><div class="exsets">3×15</div><a class="vbtn" href="https://www.youtube.com/shorts/nabhYLtz8Gg" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="1" data-ex="5"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">06</div><div class="exi"><div class="exname">Panturrilha</div><div class="exdet">Finalizando</div></div><div class="exright"><div class="exsets">3×15</div><a class="vbtn" href="https://www.youtube.com/shorts/fVGkOlkOrnA" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
   </div>
   <div class="tipb"><div class="tipt">⭐ Segredo</div><div class="tipi"><span class="tipa">→</span><span class="tipt2">Hip Thrust com carga progressiva — o mais importante</span></div></div>
 </div>
@@ -360,17 +364,17 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
   <div class="who"><div class="wtype wmus">💪 Superior + Core</div><div class="wnam">QUINTA</div><div class="wsub">Parte superior + barriga marcada</div><div class="wmeta"><div class="wchip">⏱ ~45 min</div></div></div>
   <div class="sec">Superior</div>
   <div class="exl">
-    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="0"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">01</div><div class="exi"><div class="exname">Puxada na frente</div><div class="exdet">Costas</div></div><div class="exsets">3×12</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="1"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">02</div><div class="exi"><div class="exname">Remada</div><div class="exdet">Máquina ou halter</div></div><div class="exsets">3×12</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="2"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">03</div><div class="exi"><div class="exname">Elevação lateral</div><div class="exdet">Ombro</div></div><div class="exsets">3×12</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="3"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">04</div><div class="exi"><div class="exname">Tríceps corda</div><div class="exdet">Contração total</div></div><div class="exsets">3×12</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="4"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">05</div><div class="exi"><div class="exname">Bíceps</div><div class="exdet">Halter ou barra</div></div><div class="exsets">3×12</div></div>
+    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="0"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">01</div><div class="exi"><div class="exname">Puxada na frente</div><div class="exdet">Costas</div></div><div class="exright"><div class="exsets">3×12</div><a class="vbtn" href="https://www.youtube.com/shorts/_2MfZAj98tk" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="1"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">02</div><div class="exi"><div class="exname">Remada</div><div class="exdet">Máquina ou halter</div></div><div class="exright"><div class="exsets">3×12</div><a class="vbtn" href="https://www.youtube.com/shorts/7lc8Ow4vIwA" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="2"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">03</div><div class="exi"><div class="exname">Elevação lateral</div><div class="exdet">Ombro</div></div><div class="exright"><div class="exsets">3×12</div><a class="vbtn" href="https://www.youtube.com/shorts/7q282CL_DSU" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="3"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">04</div><div class="exi"><div class="exname">Tríceps corda</div><div class="exdet">Contração total</div></div><div class="exright"><div class="exsets">3×12</div><a class="vbtn" href="https://www.youtube.com/shorts/-9QOMRXUSIg" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="4"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">05</div><div class="exi"><div class="exname">Bíceps</div><div class="exdet">Halter ou barra</div></div><div class="exright"><div class="exsets">3×12</div><a class="vbtn" href="https://www.youtube.com/shorts/T7cOnEDWFrY" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
   </div>
   <div class="sec">🔥 Core</div>
   <div class="exl">
-    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="5"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">C1</div><div class="exi"><div class="exname">Prancha</div><div class="exdet">Corpo reto, respira</div></div><div class="exsets">3×40s</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="6"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">C2</div><div class="exi"><div class="exname">Abdominal infra</div><div class="exdet">Controlado</div></div><div class="exsets">3×12</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="7"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">C3</div><div class="exi"><div class="exname">Abdominal bicicleta</div><div class="exdet">Cotovelo toca joelho</div></div><div class="exsets">3×15</div></div>
+    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="5"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">C1</div><div class="exi"><div class="exname">Prancha</div><div class="exdet">Corpo reto, respira</div></div><div class="exright"><div class="exsets">3×40s</div><a class="vbtn" href="https://www.youtube.com/shorts/ohxyKQzZ2xM" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="6"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">C2</div><div class="exi"><div class="exname">Abdominal infra</div><div class="exdet">Controlado</div></div><div class="exright"><div class="exsets">3×12</div><a class="vbtn" href="https://www.youtube.com/shorts/OKiou9UhBtk" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="3" data-ex="7"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">C3</div><div class="exi"><div class="exname">Abdominal bicicleta</div><div class="exdet">Cotovelo toca joelho</div></div><div class="exright"><div class="exsets">3×15</div><a class="vbtn" href="https://www.youtube.com/shorts/FKVKR7Q4Keg" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
   </div>
 </div>
 
@@ -381,12 +385,12 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
   <div class="tipb" style="margin-bottom:8px;"><div class="tipt">📋 Regra</div><div class="tipi"><span class="tipa">→</span><span class="tipt2">6 exercícios sem parar · 1 min de descanso entre voltas</span></div></div>
   <div class="sec">Circuito</div>
   <div class="exl">
-    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="0"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">01</div><div class="exi"><div class="exname">Agachamento + desenvolvimento</div><div class="exdet">Combinado</div></div><div class="exsets">12 rep</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="1"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">02</div><div class="exi"><div class="exname">Stiff</div><div class="exdet">Posterior</div></div><div class="exsets">12 rep</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="2"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">03</div><div class="exi"><div class="exname">Remada</div><div class="exdet">Costas</div></div><div class="exsets">12 rep</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="3"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">04</div><div class="exi"><div class="exname">Elevação lateral</div><div class="exdet">Ombro</div></div><div class="exsets">12 rep</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="4"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">05</div><div class="exi"><div class="exname">Abdominal infra</div><div class="exdet">Core</div></div><div class="exsets">12 rep</div></div>
-    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="5"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">06</div><div class="exi"><div class="exname">Prancha</div><div class="exdet">Finaliza</div></div><div class="exsets">30s</div></div>
+    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="0"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">01</div><div class="exi"><div class="exname">Agachamento + desenvolvimento</div><div class="exdet">Combinado</div></div><div class="exright"><div class="exsets">12 rep</div><a class="vbtn" href="https://www.youtube.com/shorts/THe0xT8nQQ8" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="1"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">02</div><div class="exi"><div class="exname">Stiff</div><div class="exdet">Posterior</div></div><div class="exright"><div class="exsets">12 rep</div><a class="vbtn" href="https://www.youtube.com/shorts/ZoUMv0gsgI8" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="2"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">03</div><div class="exi"><div class="exname">Remada</div><div class="exdet">Costas</div></div><div class="exright"><div class="exsets">12 rep</div><a class="vbtn" href="https://www.youtube.com/shorts/7lc8Ow4vIwA" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="3"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">04</div><div class="exi"><div class="exname">Elevação lateral</div><div class="exdet">Ombro</div></div><div class="exright"><div class="exsets">12 rep</div><a class="vbtn" href="https://www.youtube.com/shorts/7q282CL_DSU" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="4"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">05</div><div class="exi"><div class="exname">Abdominal infra</div><div class="exdet">Core</div></div><div class="exright"><div class="exsets">12 rep</div><a class="vbtn" href="https://www.youtube.com/shorts/OKiou9UhBtk" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
+    <div class="exr" onclick="togEx(this)" data-day="5" data-ex="5"><div class="chk"><svg class="ck-svg" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="exn">06</div><div class="exi"><div class="exname">Prancha</div><div class="exdet">Finaliza</div></div><div class="exright"><div class="exsets">30s</div><a class="vbtn" href="https://www.youtube.com/shorts/ohxyKQzZ2xM" target="_blank" onclick="event.stopPropagation()"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></a></div></div>
   </div>
 </div>
 
@@ -439,16 +443,44 @@ html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font-
    {n: nome, g: gramas padrão, p: proteína(g), c: categoria}
    ============================================================ */
 const FOODS=[
-  // PROTEÍNAS ANIMAIS
-  {n:'Frango grelhado',g:100,p:31,c:'🍗 Carnes'},
-  {n:'Frango cozido',g:100,p:28,c:'🍗 Carnes'},
-  {n:'Peito de frango',g:130,p:40,c:'🍗 Carnes'},
-  {n:'Frango assado',g:100,p:29,c:'🍗 Carnes'},
-  {n:'Carne moída magra',g:100,p:26,c:'🍗 Carnes'},
-  {n:'Carne moída 80/20',g:100,p:23,c:'🍗 Carnes'},
-  {n:'Patinho grelhado',g:100,p:28,c:'🍗 Carnes'},
-  {n:'Alcatra grelhada',g:100,p:27,c:'🍗 Carnes'},
-  {n:'Contrafilé',g:100,p:26,c:'🍗 Carnes'},
+  // FRANGO
+  {n:'Frango grelhado',g:100,p:31,c:'🍗 Frango'},
+  {n:'Frango cozido',g:100,p:28,c:'🍗 Frango'},
+  {n:'Peito de frango',g:130,p:40,c:'🍗 Frango'},
+  {n:'Frango assado',g:100,p:29,c:'🍗 Frango'},
+  {n:'Frango desfiado',g:100,p:28,c:'🍗 Frango'},
+  {n:'Coxa de frango',g:120,p:26,c:'🍗 Frango'},
+  {n:'Sobrecoxa',g:120,p:24,c:'🍗 Frango'},
+  // CARNE BOVINA
+  {n:'Carne moída magra',g:100,p:26,c:'🥩 Carne Bovina'},
+  {n:'Carne moída 80/20',g:100,p:23,c:'🥩 Carne Bovina'},
+  {n:'Patinho grelhado',g:100,p:28,c:'🥩 Carne Bovina'},
+  {n:'Alcatra grelhada',g:100,p:27,c:'🥩 Carne Bovina'},
+  {n:'Contrafilé',g:100,p:26,c:'🥩 Carne Bovina'},
+  {n:'Picanha grelhada',g:100,p:25,c:'🥩 Carne Bovina'},
+  {n:'Costela bovina',g:120,p:24,c:'🥩 Carne Bovina'},
+  {n:'Peito bovino',g:100,p:26,c:'🥩 Carne Bovina'},
+  {n:'Filé mignon',g:100,p:28,c:'🥩 Carne Bovina'},
+  {n:'Maminha',g:100,p:25,c:'🥩 Carne Bovina'},
+  {n:'Coxão mole',g:100,p:27,c:'🥩 Carne Bovina'},
+  {n:'Lagarto cozido',g:100,p:26,c:'🥩 Carne Bovina'},
+  {n:'Acém cozido',g:100,p:24,c:'🥩 Carne Bovina'},
+  {n:'Fraldinha',g:100,p:25,c:'🥩 Carne Bovina'},
+  {n:'Músculo cozido',g:100,p:24,c:'🥩 Carne Bovina'},
+  // VÍSCERAS
+  {n:'Fígado bovino',g:100,p:29,c:'🫀 Vísceras'},
+  {n:'Coração bovino',g:100,p:26,c:'🫀 Vísceras'},
+  {n:'Rim bovino',g:100,p:25,c:'🫀 Vísceras'},
+  {n:'Tutano',g:50,p:3,c:'🫀 Vísceras'},
+  // PORCO
+  {n:'Bacon',g:30,p:5,c:'🐷 Porco'},
+  {n:'Linguiça toscana',g:100,p:14,c:'🐷 Porco'},
+  {n:'Linguiça de frango',g:100,p:16,c:'🐷 Porco'},
+  {n:'Costela de porco',g:120,p:22,c:'🐷 Porco'},
+  {n:'Pernil assado',g:100,p:24,c:'🐷 Porco'},
+  {n:'Lombo de porco',g:100,p:25,c:'🐷 Porco'},
+  {n:'Presunto',g:50,p:8,c:'🐷 Porco'},
+  // PEIXES
   {n:'Tilápia grelhada',g:100,p:26,c:'🐟 Peixes'},
   {n:'Tilápia assada',g:120,p:31,c:'🐟 Peixes'},
   {n:'Salmão grelhado',g:100,p:25,c:'🐟 Peixes'},
@@ -458,6 +490,7 @@ const FOODS=[
   {n:'Merluza',g:100,p:22,c:'🐟 Peixes'},
   {n:'Bacalhau cozido',g:100,p:23,c:'🐟 Peixes'},
   {n:'Camarão',g:100,p:20,c:'🐟 Peixes'},
+  {n:'Peixe espada',g:100,p:24,c:'🐟 Peixes'},
   // OVOS E LATICÍNIOS
   {n:'Ovo inteiro',g:50,p:6,c:'🥚 Ovos & Laticínios'},
   {n:'2 ovos cozidos',g:100,p:12,c:'🥚 Ovos & Laticínios'},
@@ -471,7 +504,6 @@ const FOODS=[
   {n:'Queijo minas frescal',g:50,p:5,c:'🥚 Ovos & Laticínios'},
   {n:'Queijo muçarela',g:30,p:6,c:'🥚 Ovos & Laticínios'},
   {n:'Leite desnatado',g:200,p:7,c:'🥚 Ovos & Laticínios'},
-  {n:'Leite integral',g:200,p:6,c:'🥚 Ovos & Laticínios'},
   {n:'Cream cheese light',g:30,p:3,c:'🥚 Ovos & Laticínios'},
   // WHEY & SUPLEMENTOS
   {n:'Whey protein 1 scoop',g:30,p:24,c:'💊 Suplementos'},
@@ -479,13 +511,6 @@ const FOODS=[
   {n:'Whey + leite',g:250,p:30,c:'💊 Suplementos'},
   {n:'Caseína',g:30,p:24,c:'💊 Suplementos'},
   {n:'Barra de proteína',g:60,p:20,c:'💊 Suplementos'},
-  // LEGUMINOSAS
-  {n:'Feijão cozido',g:80,p:5,c:'🥫 Leguminosas'},
-  {n:'Feijão preto',g:80,p:5,c:'🥫 Leguminosas'},
-  {n:'Lentilha cozida',g:100,p:9,c:'🥫 Leguminosas'},
-  {n:'Grão-de-bico',g:80,p:7,c:'🥫 Leguminosas'},
-  {n:'Ervilha cozida',g:80,p:5,c:'🥫 Leguminosas'},
-  {n:'Edamame',g:100,p:11,c:'🥫 Leguminosas'},
   // CARBOIDRATOS
   {n:'Arroz branco cozido',g:80,p:2,c:'🍚 Carboidratos'},
   {n:'Arroz integral',g:80,p:3,c:'🍚 Carboidratos'},
@@ -495,51 +520,44 @@ const FOODS=[
   {n:'Macarrão cozido',g:100,p:4,c:'🍚 Carboidratos'},
   {n:'Pão integral',g:50,p:5,c:'🍚 Carboidratos'},
   {n:'Aveia',g:40,p:5,c:'🍚 Carboidratos'},
-  {n:'Quinoa cozida',g:100,p:4,c:'🍚 Carboidratos'},
   {n:'Tapioca',g:50,p:1,c:'🍚 Carboidratos'},
-  {n:'Cuscuz',g:80,p:3,c:'🍚 Carboidratos'},
   // VEGETAIS
   {n:'Brócolis cozido',g:100,p:3,c:'🥦 Vegetais'},
   {n:'Espinafre refogado',g:100,p:3,c:'🥦 Vegetais'},
   {n:'Couve refogada',g:60,p:2,c:'🥦 Vegetais'},
   {n:'Cenoura',g:80,p:1,c:'🥦 Vegetais'},
   {n:'Abobrinha',g:100,p:1,c:'🥦 Vegetais'},
-  {n:'Berinjela',g:100,p:1,c:'🥦 Vegetais'},
   {n:'Tomate',g:100,p:1,c:'🥦 Vegetais'},
   {n:'Alface',g:50,p:1,c:'🥦 Vegetais'},
   {n:'Pepino',g:100,p:1,c:'🥦 Vegetais'},
-  {n:'Chuchu cozido',g:100,p:1,c:'🥦 Vegetais'},
-  {n:'Mix de legumes',g:150,p:4,c:'🥦 Vegetais'},
   {n:'Salada verde',g:80,p:1,c:'🥦 Vegetais'},
+  // LEGUMINOSAS
+  {n:'Feijão cozido',g:80,p:5,c:'🥫 Leguminosas'},
+  {n:'Feijão preto',g:80,p:5,c:'🥫 Leguminosas'},
+  {n:'Lentilha cozida',g:100,p:9,c:'🥫 Leguminosas'},
+  {n:'Grão-de-bico',g:80,p:7,c:'🥫 Leguminosas'},
   // FRUTAS
   {n:'Banana',g:80,p:1,c:'🍎 Frutas'},
   {n:'Maçã',g:130,p:0,c:'🍎 Frutas'},
   {n:'Laranja',g:130,p:1,c:'🍎 Frutas'},
   {n:'Morango',g:100,p:1,c:'🍎 Frutas'},
-  {n:'Melancia',g:200,p:1,c:'🍎 Frutas'},
-  {n:'Abacaxi',g:100,p:1,c:'🍎 Frutas'},
-  {n:'Manga',g:100,p:1,c:'🍎 Frutas'},
-  {n:'Uva',g:100,p:1,c:'🍎 Frutas'},
-  {n:'Mamão',g:100,p:1,c:'🍎 Frutas'},
   {n:'Abacate',g:80,p:2,c:'🍎 Frutas'},
-  // OLEAGINOSAS E GORDURAS
+  {n:'Mamão',g:100,p:1,c:'🍎 Frutas'},
+  {n:'Manga',g:100,p:1,c:'🍎 Frutas'},
+  // OLEAGINOSAS
   {n:'Castanha-do-pará',g:15,p:2,c:'🥜 Oleaginosas'},
   {n:'Castanha de caju',g:15,p:2,c:'🥜 Oleaginosas'},
   {n:'Amêndoa',g:15,p:3,c:'🥜 Oleaginosas'},
-  {n:'Nozes',g:15,p:2,c:'🥜 Oleaginosas'},
   {n:'Amendoim',g:30,p:7,c:'🥜 Oleaginosas'},
   {n:'Pasta de amendoim',g:30,p:8,c:'🥜 Oleaginosas'},
   {n:'Mix de castanhas',g:20,p:3,c:'🥜 Oleaginosas'},
   {n:'Azeite de oliva',g:10,p:0,c:'🥜 Oleaginosas'},
-  // LANCHES / OUTROS
-  {n:'Açaí sem complemento',g:200,p:3,c:'🥣 Outros'},
-  {n:'Vitamina de fruta c/ leite',g:250,p:7,c:'🥣 Outros'},
+  // OUTROS
   {n:'Sopa de frango',g:300,p:18,c:'🥣 Outros'},
-  {n:'Caldo verde',g:250,p:8,c:'🥣 Outros'},
-  {n:'Biscoito de arroz',g:20,p:1,c:'🥣 Outros'},
   {n:'Wrap integral c/ frango',g:200,p:22,c:'🥣 Outros'},
   {n:'Sanduíche de atum',g:180,p:20,c:'🥣 Outros'},
-];
+  {n:'Vitamina de fruta c/ leite',g:250,p:7,c:'🥣 Outros'},
+]
 
 const CATS=['Todos',...[...new Set(FOODS.map(f=>f.c))]];
 
@@ -548,47 +566,47 @@ const CATS=['Todos',...[...new Set(FOODS.map(f=>f.c))]];
    Estrutura: { nome, itens: [{fid(índice FOODS), g}] }
    ============================================================ */
 const DEFAULT_PLAN=[
-  // 0 SEG
-  [{meal:'🍌 Pré-treino',items:[{fi:64,g:80}]},
-   {meal:'💪 Pós-treino',items:[{fi:24,g:170},{fi:33,g:30}]},
-   {meal:'🍽️ Almoço',items:[{fi:0,g:130},{fi:44,g:80},{fi:36,g:80}]},
-   {meal:'🥜 Lanche',items:[{fi:74,g:15},{fi:18,g:50}]},
-   {meal:'🌙 Jantar',items:[{fi:10,g:120},{fi:60,g:150}]}],
-  // 1 TER
-  [{meal:'🍌 Pré-treino',items:[{fi:64,g:80}]},
-   {meal:'💪 Pós-treino',items:[{fi:33,g:30},{fi:64,g:80}]},
-   {meal:'🍽️ Almoço REFORÇADO',items:[{fi:5,g:140},{fi:44,g:100},{fi:36,g:80}]},
-   {meal:'🥛 Lanche',items:[{fi:24,g:170}]},
-   {meal:'🌙 Jantar',items:[{fi:0,g:120},{fi:60,g:150}]}],
-  // 2 QUA
-  [{meal:'🍌 Pré-treino',items:[{fi:64,g:80}]},
-   {meal:'💪 Pós-treino',items:[{fi:24,g:170},{fi:33,g:30}]},
-   {meal:'🍽️ Almoço',items:[{fi:0,g:130},{fi:44,g:80},{fi:36,g:80}]},
-   {meal:'🥜 Lanche',items:[{fi:74,g:15},{fi:66,g:130}]},
-   {meal:'🌙 Jantar',items:[{fi:7,g:120},{fi:62,g:80}]}],
-  // 3 QUI
-  [{meal:'🍌 Pré-treino',items:[{fi:64,g:80}]},
-   {meal:'💪 Pós-treino',items:[{fi:33,g:30}]},
-   {meal:'🍽️ Almoço',items:[{fi:10,g:140},{fi:44,g:80},{fi:36,g:80}]},
-   {meal:'🥛 Lanche',items:[{fi:24,g:170}]},
-   {meal:'🌙 Jantar',items:[{fi:4,g:120},{fi:60,g:150}]}],
-  // 4 SEX
-  [{meal:'☀️ Café da manhã',items:[{fi:19,g:100},{fi:24,g:170}]},
-   {meal:'🍽️ Almoço',items:[{fi:0,g:130},{fi:44,g:60},{fi:36,g:80}]},
-   {meal:'🥤 Lanche',items:[{fi:33,g:30}]},
-   {meal:'🌙 Jantar',items:[{fi:22,g:120}]}],
-  // 5 SÁB
-  [{meal:'🍌 Pré-treino',items:[{fi:64,g:80}]},
-   {meal:'💪 Pós-treino',items:[{fi:33,g:30}]},
-   {meal:'🍽️ Almoço',items:[{fi:7,g:140},{fi:44,g:100},{fi:36,g:80}]},
-   {meal:'🥛 Lanche',items:[{fi:24,g:170}]},
-   {meal:'🌙 Jantar',items:[{fi:10,g:120}]}],
-  // 6 DOM
-  [{meal:'☀️ Café da manhã',items:[{fi:33,g:30},{fi:25,g:170}]},
-   {meal:'🍽️ Almoço livre',items:[{fi:7,g:130},{fi:44,g:80},{fi:62,g:80}]},
-   {meal:'🍓 Lanche',items:[{fi:67,g:130},{fi:74,g:15}]},
-   {meal:'🌙 Jantar',items:[{fi:0,g:120}]}],
-];
+  // 0 SEG — Corrida leve
+  [{meal:'🍌 Pré-treino',items:[{fi:83,g:80}]},
+   {meal:'💪 Pós-treino',items:[{fi:49,g:170},{fi:56,g:30}]},
+   {meal:'🍽️ Almoço',items:[{fi:0,g:130},{fi:61,g:80},{fi:79,g:80}]},
+   {meal:'🥜 Lanche',items:[{fi:90,g:15},{fi:44,g:50}]},
+   {meal:'🌙 Jantar',items:[{fi:33,g:120},{fi:78,g:80}]}],
+  // 1 TER — Glúteo
+  [{meal:'🍌 Pré-treino',items:[{fi:83,g:80}]},
+   {meal:'💪 Pós-treino',items:[{fi:56,g:30},{fi:83,g:80}]},
+   {meal:'🍽️ Almoço REFORÇADO',items:[{fi:7,g:140},{fi:61,g:100},{fi:79,g:80}]},
+   {meal:'🥛 Lanche',items:[{fi:49,g:170}]},
+   {meal:'🌙 Jantar',items:[{fi:0,g:120},{fi:78,g:80}]}],
+  // 2 QUA — HIIT
+  [{meal:'🍌 Pré-treino',items:[{fi:83,g:80}]},
+   {meal:'💪 Pós-treino',items:[{fi:49,g:170},{fi:56,g:30}]},
+   {meal:'🍽️ Almoço',items:[{fi:0,g:130},{fi:61,g:80},{fi:79,g:80}]},
+   {meal:'🥜 Lanche',items:[{fi:90,g:15},{fi:84,g:130}]},
+   {meal:'🌙 Jantar',items:[{fi:10,g:120},{fi:78,g:80}]}],
+  // 3 QUI — Superior
+  [{meal:'🍌 Pré-treino',items:[{fi:83,g:80}]},
+   {meal:'💪 Pós-treino',items:[{fi:56,g:30}]},
+   {meal:'🍽️ Almoço',items:[{fi:35,g:140},{fi:61,g:80},{fi:79,g:80}]},
+   {meal:'🥛 Lanche',items:[{fi:49,g:170}]},
+   {meal:'🌙 Jantar',items:[{fi:7,g:120},{fi:78,g:80}]}],
+  // 4 SEX — Descanso
+  [{meal:'☀️ Café da manhã',items:[{fi:44,g:100},{fi:49,g:170}]},
+   {meal:'🍽️ Almoço',items:[{fi:0,g:130},{fi:61,g:60},{fi:79,g:80}]},
+   {meal:'🥤 Lanche',items:[{fi:56,g:30}]},
+   {meal:'🌙 Jantar',items:[{fi:48,g:120}]}],
+  // 5 SÁB — Full Body
+  [{meal:'🍌 Pré-treino',items:[{fi:83,g:80}]},
+   {meal:'💪 Pós-treino',items:[{fi:56,g:30}]},
+   {meal:'🍽️ Almoço',items:[{fi:9,g:140},{fi:61,g:100},{fi:79,g:80}]},
+   {meal:'🥛 Lanche',items:[{fi:49,g:170}]},
+   {meal:'🌙 Jantar',items:[{fi:33,g:120},{fi:78,g:80}]}],
+  // 6 DOM — Livre
+  [{meal:'☀️ Café da manhã',items:[{fi:56,g:30},{fi:49,g:170}]},
+   {meal:'🍽️ Almoço livre',items:[{fi:11,g:130},{fi:61,g:80},{fi:78,g:80}]},
+   {meal:'🍓 Lanche',items:[{fi:84,g:130},{fi:90,g:15}]},
+   {meal:'🌙 Jantar',items:[{fi:0,g:120},{fi:78,g:80}]}],
+]
 
 /* ====== STATE ====== */
 let curDay=0,curTab='home';
